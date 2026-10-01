@@ -12,6 +12,12 @@ open index.html          # macOS — or just drag the file into a browser
 
 No build step, no server, no dependencies. `index.html` is the deliverable.
 
+![Hero: Computational Architecture for High-Entropy Spaces, over the live black hole](docs/screenshots/02-hero.png)
+
+| Entry gate | Research content |
+|---|---|
+| ![Entry gate with the interactive black hole](docs/screenshots/01-entry-gate.png) | ![Framework chapter with glossary-marked terms](docs/screenshots/03-content.png) |
+
 ---
 
 ## Why one file
@@ -48,6 +54,7 @@ brand/                           source logos, higher resolution than shipped
   logo-full-keyed.png              background removed — this is what's embedded
   logo-shield.png                  shield mark alone
 docs/
+  screenshots/                     README images (1440×900, headless Chromium)
   content-audit.html               line-by-line diff against azsec.biz
   type-specimen.html               body-typeface comparison
 tools/
