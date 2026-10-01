@@ -1,0 +1,122 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AZSEC — body-text candidates</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500&family=Instrument+Sans:wght@400;500&display=swap');
+:root{
+  --bg:#080f1e; --bg-panel:#0d1728; --bg-panel-2:#122036;
+  --line:rgba(198,216,244,0.16); --line-strong:rgba(198,216,244,0.34);
+  --fg:#e8eefb; --fg-dim:#9db0cd; --fg-faint:#7d90ad; --red:#ff3b39;
+}
+*{box-sizing:border-box; border-radius:0;}
+body{margin:0; background:var(--bg); color:var(--fg);
+  font-family:'IBM Plex Mono',ui-monospace,monospace; font-size:14px; line-height:1.5;
+  -webkit-font-smoothing:antialiased;}
+.wrap{max-width:1180px; margin:0 auto; padding:44px 24px 90px;}
+h1{font-family:'Archivo Black','Arial Black',sans-serif; text-transform:uppercase;
+  letter-spacing:-.03em; line-height:.92; font-size:clamp(26px,4vw,44px); margin:0 0 14px;}
+.kicker{font-family:'IBM Plex Mono',monospace; text-transform:uppercase; letter-spacing:.12em;
+  font-size:10px; color:var(--fg-faint); margin:0 0 18px;}
+.intro{color:var(--fg-dim); font-size:13px; line-height:1.75; max-width:70ch; margin:0 0 40px;}
+.intro b{color:var(--fg); font-weight:500;}
+.grid{display:grid; gap:1px; background:var(--line); border:1px solid var(--line);}
+@media(min-width:900px){.grid{grid-template-columns:1fr 1fr;}}
+.card{background:var(--bg-panel); padding:26px 26px 30px;}
+.card.now{background:var(--bg-panel-2);}
+.head{display:flex; align-items:baseline; justify-content:space-between; gap:14px;
+  border-bottom:1px solid var(--line); padding-bottom:10px; margin-bottom:18px;}
+.name{font-family:'IBM Plex Mono',monospace; text-transform:uppercase; letter-spacing:.06em;
+  font-size:11.5px; font-weight:600; color:var(--fg);}
+.tag{font-family:'IBM Plex Mono',monospace; font-size:9.5px; letter-spacing:.1em;
+  text-transform:uppercase; color:var(--fg-faint); white-space:nowrap;}
+.tag.cur{color:var(--red);}
+h5{margin:0 0 8px; font-size:12.5px; font-weight:600; color:var(--fg);
+  text-transform:uppercase; letter-spacing:.01em;}
+p.spec{margin:0 0 14px; color:var(--fg-dim);}
+.note{margin:0; padding-top:14px; border-top:1px solid var(--line);
+  font-family:'IBM Plex Mono',monospace; font-size:10.5px; line-height:1.65; color:var(--fg-faint);}
+.note b{color:var(--fg-dim); font-weight:500;}
+
+/* Each candidate at the size it would actually ship at. */
+.f-plexmono h5,.f-plexmono p{font-family:'IBM Plex Mono',monospace;}
+.f-plexmono p{font-size:12.5px; line-height:1.7;}
+
+.f-jetmono h5,.f-jetmono p{font-family:'JetBrains Mono',monospace;}
+.f-jetmono p{font-size:12.5px; line-height:1.7;}
+
+.f-plexsans h5,.f-plexsans p{font-family:'IBM Plex Sans',sans-serif;}
+.f-plexsans p{font-size:14.5px; line-height:1.65;}
+
+.f-archivo h5,.f-archivo p{font-family:'Archivo',sans-serif;}
+.f-archivo p{font-size:14.5px; line-height:1.65;}
+
+.f-space h5,.f-space p{font-family:'Space Grotesk',sans-serif;}
+.f-space p{font-size:14.5px; line-height:1.65;}
+
+.f-instr h5,.f-instr p{font-family:'Instrument Sans',sans-serif;}
+.f-instr p{font-size:14.5px; line-height:1.65;}
+</style></head>
+<body>
+<div class="wrap">
+  <p class="kicker">[ Typography test / body copy ]</p>
+  <h1>Six ways to set the<br>running text</h1>
+  <p class="intro">Same paragraphs, same navy, same display face above them — only the body typeface and its
+  size change. The two monospaces are shown at <b>12.5px</b>, which is what the site uses now; the four
+  proportional faces at <b>14.5px</b>, because a sans can carry the extra size without the line getting
+  long. Read each block at arm's length, the way someone actually skims a page.</p>
+
+  <div class="grid">
+
+    <section class="card now f-plexmono">
+      <div class="head"><span class="name">IBM Plex Mono</span><span class="tag cur">In place now</span></div>
+      <h5>Multidimensional computation</h5>
+      <p class="spec">A proprietary computational architecture investigating whether adaptive representations can reveal structure within high-entropy, high-dimensional, exponential-scale information spaces — tested against real cryptographic hardness, not simulated toy problems.</p>
+      <p class="spec">r_s = 2GM/c² isn't decoration on the hero above — it's the actual radius the renderer solves for, in horizon units. Cross it and no signal gets back out. A hash function is built to behave the same way: easy in, computationally hopeless back out.</p>
+      <p class="note"><b>Why it's hard work:</b> every glyph gets the same width, so word shapes flatten out and the eye loses the ragged silhouette it uses to recognise words. Small x-height makes it worse at 12.5px.</p>
+    </section>
+
+    <section class="card f-jetmono">
+      <div class="head"><span class="name">JetBrains Mono</span><span class="tag">Stay mono, read better</span></div>
+      <h5>Multidimensional computation</h5>
+      <p class="spec">A proprietary computational architecture investigating whether adaptive representations can reveal structure within high-entropy, high-dimensional, exponential-scale information spaces — tested against real cryptographic hardness, not simulated toy problems.</p>
+      <p class="spec">r_s = 2GM/c² isn't decoration on the hero above — it's the actual radius the renderer solves for, in horizon units. Cross it and no signal gets back out. A hash function is built to behave the same way: easy in, computationally hopeless back out.</p>
+      <p class="note"><b>Trade:</b> drawn with a taller x-height and open apertures for hours of reading. Keeps the terminal identity completely. Still monospace, so long paragraphs still tire.</p>
+    </section>
+
+    <section class="card f-plexsans">
+      <div class="head"><span class="name">IBM Plex Sans</span><span class="tag">Sibling of the mono</span></div>
+      <h5>Multidimensional computation</h5>
+      <p class="spec">A proprietary computational architecture investigating whether adaptive representations can reveal structure within high-entropy, high-dimensional, exponential-scale information spaces — tested against real cryptographic hardness, not simulated toy problems.</p>
+      <p class="spec">r_s = 2GM/c² isn't decoration on the hero above — it's the actual radius the renderer solves for, in horizon units. Cross it and no signal gets back out. A hash function is built to behave the same way: easy in, computationally hopeless back out.</p>
+      <p class="note"><b>Trade:</b> same designer, same skeleton as the mono already loaded, so labels in Plex Mono and prose in Plex Sans look related rather than mismatched. The conservative pick.</p>
+    </section>
+
+    <section class="card f-archivo">
+      <div class="head"><span class="name">Archivo</span><span class="tag">Same family as the headlines</span></div>
+      <h5>Multidimensional computation</h5>
+      <p class="spec">A proprietary computational architecture investigating whether adaptive representations can reveal structure within high-entropy, high-dimensional, exponential-scale information spaces — tested against real cryptographic hardness, not simulated toy problems.</p>
+      <p class="spec">r_s = 2GM/c² isn't decoration on the hero above — it's the actual radius the renderer solves for, in horizon units. Cross it and no signal gets back out. A hash function is built to behave the same way: easy in, computationally hopeless back out.</p>
+      <p class="note"><b>Trade:</b> Archivo Black is already the display face — this is its text weight, literally the same design. Nothing new enters the page's vocabulary and the headline-to-paragraph relationship tightens.</p>
+    </section>
+
+    <section class="card f-space">
+      <div class="head"><span class="name">Space Grotesk</span><span class="tag">Most character</span></div>
+      <h5>Multidimensional computation</h5>
+      <p class="spec">A proprietary computational architecture investigating whether adaptive representations can reveal structure within high-entropy, high-dimensional, exponential-scale information spaces — tested against real cryptographic hardness, not simulated toy problems.</p>
+      <p class="spec">r_s = 2GM/c² isn't decoration on the hero above — it's the actual radius the renderer solves for, in horizon units. Cross it and no signal gets back out. A hash function is built to behave the same way: easy in, computationally hopeless back out.</p>
+      <p class="note"><b>Trade:</b> derived from a monospace, so it keeps a technical accent while freeing the widths. Distinctive enough that it starts competing with Archivo Black for attention.</p>
+    </section>
+
+    <section class="card f-instr">
+      <div class="head"><span class="name">Instrument Sans</span><span class="tag">Quietest</span></div>
+      <h5>Multidimensional computation</h5>
+      <p class="spec">A proprietary computational architecture investigating whether adaptive representations can reveal structure within high-entropy, high-dimensional, exponential-scale information spaces — tested against real cryptographic hardness, not simulated toy problems.</p>
+      <p class="spec">r_s = 2GM/c² isn't decoration on the hero above — it's the actual radius the renderer solves for, in horizon units. Cross it and no signal gets back out. A hash function is built to behave the same way: easy in, computationally hopeless back out.</p>
+      <p class="note"><b>Trade:</b> narrow, slightly condensed, disappears completely and lets the headlines and the hole do the talking. The least opinionated of the four proportional options.</p>
+    </section>
+
+  </div>
+</div>
+</body></html>
