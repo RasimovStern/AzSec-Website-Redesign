@@ -144,9 +144,10 @@ icons at the web root.
 - **GitHub Pages** — push, then Settings → Pages → deploy from branch root.
 - **Any web server** — copy `index.html` into the document root.
 
-One thing to set once a domain exists: `og:image` in `<head>` needs an
-**absolute** URL to work in link previews. There's a commented line in place
-showing the shape.
+The site is live on GitHub Pages at
+<https://rasimovstern.github.io/AzSec-Website-Redesign/>. `og:image` and
+`og:url` in `<head>` point there, because link previews need an **absolute**
+URL. If the site moves to its own domain, update both.
 
 For a host that supplies its own page skeleton — a Claude Artifact, a CMS HTML
 block — run `python3 tools/build-artifact.py`, which writes
